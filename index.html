@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Anil Kumar Dhawal — Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Anil Dhawal</a>
+<nav>
+<ul class="nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main>
+<section class="hero">
+<div class="container">
+<h1>Hi, I'm Anil — a Web Developer</h1>
+<p class="lead">I build clean, responsive websites and web apps. I care about accessibility, performance, and simple, elegant design.</p>
+<div class="cta-row">
+<a class="btn" href="about.html">Learn more</a>
+<a class="btn ghost" href="#contact">Get in touch</a>
+</div>
+</div>
+</section>
+
+
+<section class="projects container">
+<h2>Selected Projects</h2>
+<div class="grid">
+<article class="card">
+<h3>Portfolio Deployment</h3>
+<p>Static portfolio site deployed using Jenkins pipeline.</p>
+</article>
+<article class="card">
+<h3>Travel Agency Site</h3>
+<p>HTML/CSS site packaged as a Docker container.</p>
+</article>
+<article class="card">
+<h3>Blog (Maven)</h3>
+<p>Java/JSP blog packaged to WAR with Maven.</p>
+</article>
+</div>
+</section>
+
+
+<section id="contact" class="contact container">
+<h2>Contact</h2>
+<p>If you'd like to work together, email me at <a href="mailto:anil@example.com">anil@example.com</a> or connect on <a href="#">LinkedIn</a>.</p>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<small>&copy; <span id="year"></span> Anil Kumar Dhawal — All rights reserved</small>
+</div>
+</footer>
+
+
+<script>
+// Set current year
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</html>

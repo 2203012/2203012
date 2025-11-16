@@ -1,0 +1,58 @@
+<!-- ===== styles.css ===== -->
+/* Simple, clean responsive styles */
+:root{
+--brand:#0b5cff;
+--bg:#f7f8fb;
+--muted:#6b7280;
+--card:#ffffff;
+--radius:10px;
+--max-width:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.6;margin:0;background:var(--bg);color:#111}
+.container{max-width:var(--max-width);margin:0 auto;padding:28px}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;color:var(--brand);text-decoration:none;font-size:1.1rem}
+.nav{list-style:none;margin:0;padding:0;display:flex;gap:14px}
+.nav a{text-decoration:none;color:inherit;padding:8px;border-radius:6px}
+.nav a:hover{background:rgba(11,92,255,0.08)}
+
+
+.site-header{background:transparent;padding:14px 0}
+
+
+.hero{padding:64px 0;background:linear-gradient(180deg, #fff 0%, #f3f6ff 100%);border-bottom:1px solid rgba(16,24,40,0.04)}
+.hero h1{margin:0 0 12px;font-size:clamp(1.6rem,3.6vw,2.6rem)}
+.lead{color:var(--muted);max-width:60ch}
+.cta-row{margin-top:18px;display:flex;gap:12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--brand);color:#fff;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid rgba(11,92,255,0.12);color:var(--brand)}
+
+
+.projects{padding:48px 0}
+.projects h2{margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 4px 14px rgba(12,15,25,0.04)}
+.card h3{margin-top:0}
+
+
+.about-main{display:grid;grid-template-columns:1fr 300px;gap:24px;padding:32px 0}
+.bio{background:var(--card);padding:20px;border-radius:var(--radius)}
+.side-card{background:var(--card);padding:18px;border-radius:var(--radius);align-self:start}
+.skills{padding-left:18px}
+
+
+.contact{margin-top:18px}
+.site-footer{padding:18px 0;color:var(--muted);text-align:center}
+
+
+/* Responsive tweaks */
+@media (max-width:800px){
+.about-main{grid-template-columns:1fr}
+.header-inner{gap:12px}
+.nav{display:none}
+}
+
+
+/* small utilities */
+.small{font-size:.9rem;color:var(--muted)}
