@@ -1,72 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Anil Kumar Dhawal — Portfolio</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>School Management System (SMS)</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<a class="logo" href="index.html">Anil Dhawal</a>
-<nav>
-<ul class="nav">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
-<main>
-<section class="hero">
-<div class="container">
-<h1>Hi, I'm Anil — a Web Developer</h1>
-<p class="lead">I build clean, responsive websites and web apps. I care about accessibility, performance, and simple, elegant design.</p>
-<div class="cta-row">
-<a class="btn" href="about.html">Learn more</a>
-<a class="btn ghost" href="#contact">Get in touch</a>
-</div>
-</div>
-</section>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">EduSMS</a>
+      <nav>
+        <ul class="nav">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#roles">Roles</a></li>
+          <li><a href="#tech">Technology</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="langToggle" class="btn ghost" type="button">नेपाली</button>
+    </div>
+  </header>
 
+  <main>
+    <section id="overview" class="hero">
+      <div class="container">
+        <span class="tag" data-en="Modern school operations" data-ne="आधुनिक विद्यालय सञ्चालन">Modern school operations</span>
+        <h1 data-en="School Management System" data-ne="विद्यालय व्यवस्थापन प्रणाली">School Management System</h1>
+        <p class="lead" data-en="A secure, scalable, and user-friendly web platform for Admin, Teacher, Student, and Parent users with real-time academic and administrative workflows." data-ne="प्रशासक, शिक्षक, विद्यार्थी र अभिभावकका लागि सुरक्षित, विस्तारयोग्य र प्रयोगमैत्री वेब प्लेटफर्म जसले शैक्षिक र प्रशासनिक कामहरूलाई वास्तविक समयमा जोड्छ।">
+          A secure, scalable, and user-friendly web platform for Admin, Teacher, Student, and Parent users with real-time academic and administrative workflows.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="#roles" data-en="Explore Features" data-ne="सुविधा हेर्नुहोस्">Explore Features</a>
+          <a class="btn ghost" href="about.html" data-en="System Blueprint" data-ne="प्रणाली खाका">System Blueprint</a>
+        </div>
+      </div>
+    </section>
 
-<section class="projects container">
-<h2>Selected Projects</h2>
-<div class="grid">
-<article class="card">
-<h3>Portfolio Deployment</h3>
-<p>Static portfolio site deployed using Jenkins pipeline.</p>
-</article>
-<article class="card">
-<h3>Travel Agency Site</h3>
-<p>HTML/CSS site packaged as a Docker container.</p>
-</article>
-<article class="card">
-<h3>Blog (Maven)</h3>
-<p>Java/JSP blog packaged to WAR with Maven.</p>
-</article>
-</div>
-</section>
+    <section id="roles" class="container section">
+      <h2 data-en="Role-based Portals" data-ne="भूमिका-आधारित पोर्टल">Role-based Portals</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Admin Panel</h3>
+          <ul>
+            <li>Authentication with permission controls</li>
+            <li>Teacher / student / parent / staff lifecycle management</li>
+            <li>Class, section, subject, timetable, admission, and fees</li>
+            <li>Exam, result, reports (PDF/Excel), logs, and backup</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Teacher Dashboard</h3>
+          <ul>
+            <li>Assigned class and subject overview</li>
+            <li>Attendance entry and marks upload</li>
+            <li>Homework, assignment, and study material publishing</li>
+            <li>Parent/student communication and performance insights</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Student Portal</h3>
+          <ul>
+            <li>Attendance, timetable, homework, and notices</li>
+            <li>Result and marksheet access</li>
+            <li>Study material downloads</li>
+            <li>Fee status and payment history</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Parent Portal</h3>
+          <ul>
+            <li>Child performance and attendance tracking</li>
+            <li>Exam result visibility</li>
+            <li>Online fee payment and receipt download</li>
+            <li>Teacher messaging and instant notifications</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
+    <section id="tech" class="container section">
+      <h2>Technical Architecture</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Recommended Stack</h3>
+          <ul>
+            <li><strong>Frontend:</strong> HTML/CSS/JavaScript or React</li>
+            <li><strong>Backend:</strong> Laravel (PHP) or Node.js</li>
+            <li><strong>Database:</strong> MySQL (primary) + optional Firebase modules</li>
+            <li><strong>Auth:</strong> Role-based access control + secure session management</li>
+            <li><strong>Notifications:</strong> Email/SMS event alerts</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Core Quality Goals</h3>
+          <ul>
+            <li>Responsive on desktop, tablet, and mobile</li>
+            <li>English + Nepali language support</li>
+            <li>Encrypted sensitive data and audit logging</li>
+            <li>Scalable API-first module design</li>
+            <li>Analytics dashboard for attendance, fees, and results</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-<section id="contact" class="contact container">
-<h2>Contact</h2>
-<p>If you'd like to work together, email me at <a href="mailto:anil@example.com">anil@example.com</a> or connect on <a href="#">LinkedIn</a>.</p>
-</section>
-</main>
+    <section class="container section">
+      <h2>Expected Outcomes</h2>
+      <p class="lead">The platform reduces paperwork, improves communication between school and families, and gives real-time access to academic and administrative data for better decision-making.</p>
+    </section>
 
+    <section id="contact" class="container contact section">
+      <h2>Project Contact</h2>
+      <p>Email: <a href="mailto:sms-admin@example.com">sms-admin@example.com</a></p>
+    </section>
+  </main>
 
-<footer class="site-footer">
-<div class="container">
-<small>&copy; <span id="year"></span> Anil Kumar Dhawal — All rights reserved</small>
-</div>
-</footer>
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> EduSMS — School Management Platform</small>
+    </div>
+  </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-<script>
-// Set current year
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+    const toggleButton = document.getElementById('langToggle');
+    let nepaliMode = false;
+
+    toggleButton.addEventListener('click', () => {
+      nepaliMode = !nepaliMode;
+      document.querySelectorAll('[data-en]').forEach((node) => {
+        node.textContent = nepaliMode ? node.dataset.ne : node.dataset.en;
+      });
+      toggleButton.textContent = nepaliMode ? 'English' : 'नेपाली';
+      document.documentElement.lang = nepaliMode ? 'ne' : 'en';
+    });
+  </script>
+</body>
 </html>
